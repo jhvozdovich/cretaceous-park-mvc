@@ -1,0 +1,10 @@
+<h1>Dinos and Aminals:</h1>
+
+<ol>
+@foreach (Animal animal in Model)
+{
+  <a href="/Animals/Details/@(animal.AnimalId)"><p>@animal.Name</p></a>
+}
+</ol>
+
+<button><a href="/Animals/Create"><p>New Animal</p></a></button>
